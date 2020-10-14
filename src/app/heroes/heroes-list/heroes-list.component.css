@@ -26,7 +26,6 @@
   }
   .heroes li.selected:hover {
     background-color: #BBD8DC;
-    color: white;
   }
   .heroes .badge {
     display: inline-block;
@@ -42,4 +41,5 @@
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
   }
+  
   
