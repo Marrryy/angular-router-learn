@@ -1,12 +1,13 @@
 <h1>Angular Router Example</h1>
 <nav>
-    <a class="button" routerLink="crisis-list" routerLinkActive="activebutton">Crisis Center</a> | 
+    <a class="button" routerLink="crises-center" routerLinkActive="activebutton">Crisis Center</a> | 
     <a class="button" routerLink="heroes-list" routerLinkActive="activebutton">Heroes</a>
+    <a [routerLink]="[{ outlets: { popup: ['compose'] } }]">Contact</a>
 </nav>
 
-<!-- <div [@routeAnimation]="getAnimationData(routerOutlet)">
+<div [@routeAnimation]="getAnimationData(routerOutlet)">
     <router-outlet #routerOutlet="outlet"></router-outlet>
-</div> -->
+</div>
 
-<router-outlet></router-outlet>
+<router-outlet name="popup"></router-outlet>
 
